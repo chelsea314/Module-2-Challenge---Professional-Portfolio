@@ -1,0 +1,49 @@
+:root {
+    --dark: #192841;
+    --light: #e7e3e9;
+    --minty: #b3ecec;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* Header Styles */
+header {
+    display:flex;
+    align-items: center;
+    background-color: var(--dark);
+    width:100%;
+    height: 80px;
+
+}
+
+h1 {
+    background-color: var(--minty);
+    display:flex;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    justify-content: flex-end;
+    font-size: 40px;
+}
+
+nav{
+    display: flex;
+    align-items: flex-end;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: var(--dark);
+    color:var(--minty);
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
