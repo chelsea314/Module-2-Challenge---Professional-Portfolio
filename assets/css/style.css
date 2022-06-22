@@ -47,13 +47,23 @@ nav ul li{
     padding: 20px;
 }
 
+a {
+    color:var(--minty);
+    background-color: var(--dark);
+    text-decoration:underline;
+}
+
 img {
    height: 100px;
-   width: 70px;
+   width: 115px;
    background-color: var(--dark);
    margin-bottom: 20px;
 }
 
+h2 {
+    width: 350px;
+    height: 150px;
+}
 
 /* Classes */
 .subtitle{
@@ -61,10 +71,29 @@ img {
     width: 100%;
     color: var(--minty);
     display: flex;
-    justify-content: flex-end;
     align-items: flex-end;
     padding-bottom: 30px;
     padding-right: 50px;
     background-image: url(https://cdn11.bigcommerce.com/s-257gfls6/images/stencil/1280x1280/products/8496/13780/PAR-MDNTBLUE__92550.1510939894.jpg?c=2);
 
+}
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.headings{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-right: solid #192841;
+    font-size: 40px;
+}
+
+.loremipsum{
+    padding: 20px;
+    font-size: 16px;
 }
