@@ -66,6 +66,8 @@ h2 {
 }
 
 /* Classes */
+
+/* Affects the subtitle section of the page */
 .subtitle{
     height:160px;
     width: 100%;
@@ -78,12 +80,14 @@ h2 {
 
 }
 
-.aboutme{
+/* Styles each section of main content */
+.section{
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
+/* Styles the left-hand side section headings */
 .headings{
     display: flex;
     align-items: center;
@@ -93,7 +97,26 @@ h2 {
     font-size: 40px;
 }
 
+/* Styles the paragraph in 'About Me' section */
 .loremipsum{
     padding: 20px;
     font-size: 16px;
+}
+
+/* Styles cards in 'Work' section */
+.card{
+    box-shadow: 0 25px 15px 0 rgba(0,0,0,30%);
+    transition: 0.3s;
+    margin:auto;
+}
+
+.surf {
+    width: 800px;
+    height: 200px;
+}
+
+.workcards{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
