@@ -32,18 +32,39 @@ h1 {
 
 nav{
     display: flex;
-    align-items: flex-end;
-}
-nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    background-color: var(--dark);
-    color:var(--minty);
+    justify-content: flex-end;
+    margin-left: auto;    
 }
 
-nav ul li {
+nav ul{
     display: flex;
-    flex-direction: row;
+}
+
+nav ul li{
+    background-color: var(--dark);
+    color: var(--minty);
+    font-size: 25px;
+    padding: 20px;
+}
+
+img {
+   height: 100px;
+   width: 70px;
+   background-color: var(--dark);
+   margin-bottom: 20px;
+}
+
+
+/* Classes */
+.subtitle{
+    height:160px;
+    width: 100%;
+    color: var(--minty);
+    display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    background-image: url(https://cdn11.bigcommerce.com/s-257gfls6/images/stencil/1280x1280/products/8496/13780/PAR-MDNTBLUE__92550.1510939894.jpg?c=2);
+
 }
