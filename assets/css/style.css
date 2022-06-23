@@ -53,19 +53,19 @@ a {
     text-decoration:underline;
 }
 
-img {
-   height: 100px;
-   width: 115px;
-   background-color: var(--dark);
-   margin-bottom: 20px;
-}
-
 h2 {
     width: 350px;
     height: 150px;
 }
 
 /* Classes */
+
+.avatar {
+height: 100px;
+width: 115px;
+background-color: var(--dark);
+margin-bottom: 20px;
+}
 
 /* Affects the subtitle section of the page */
 .subtitle{
@@ -83,20 +83,28 @@ h2 {
 /* Styles each section of main content */
 .section{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: left;
+    margin: 35px;
 }
 
 /* Styles the left-hand side section headings */
 .headings{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
     padding-right: 20px;
-    border-right: solid #192841;
     font-size: 40px;
 }
 
+.height {
+    height: 660px;
+    border-right: solid var(--dark);
+}
+
+.borderright{
+    border-right: solid var(--dark);
+}
 /* Styles the paragraph in 'About Me' section */
 .loremipsum{
     padding: 20px;
@@ -104,19 +112,68 @@ h2 {
 }
 
 /* Styles cards in 'Work' section */
-.card{
-    box-shadow: 0 25px 15px 0 rgba(0,0,0,30%);
-    transition: 0.3s;
-    margin:auto;
-}
-
-.surf {
-    width: 800px;
-    height: 200px;
-}
-
 .workcards{
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.largecard{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.largecard img{
+    max-width: 100%;
+    height: 300px;
+    width: 830px;
+}
+.card{
+    display: block;
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.card img{
+    height: 150px;
+    width: 400px;
+}
+
+.borderminty{
+    border:solid var(--minty)
+}
+
+
+/* Hover */
+.card:hover{
+    opacity: 0.3;
+}
+
+.largecard:hover{
+    opacity: 0.3;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 640px) {
+    .card {
+        flex-basis: 50%;
+    }
+}
+   
+@media only screen and (min-width: 960px) {
+    .card {
+        flex-basis: 33.333%;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .card {
+        flex-basis: 25%;
+    }
+
+    .largecard {
+     width: 100%;   
+    }
 }
