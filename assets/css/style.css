@@ -28,6 +28,7 @@ h1 {
     height: 50px;
     justify-content: flex-end;
     font-size: 40px;
+    padding-right: 10px;
 }
 
 nav{
@@ -54,7 +55,7 @@ a {
 }
 
 h2 {
-    width: 350px;
+    width: 250px;
     height: 150px;
 }
 
@@ -77,7 +78,6 @@ margin-bottom: 20px;
     padding-bottom: 30px;
     padding-right: 50px;
     background-image: url(https://cdn11.bigcommerce.com/s-257gfls6/images/stencil/1280x1280/products/8496/13780/PAR-MDNTBLUE__92550.1510939894.jpg?c=2);
-
 }
 
 /* Styles each section of main content */
@@ -107,7 +107,8 @@ margin-bottom: 20px;
 }
 /* Styles the paragraph in 'About Me' section */
 .loremipsum{
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     font-size: 16px;
 }
 
@@ -146,14 +147,27 @@ margin-bottom: 20px;
     border:solid var(--minty)
 }
 
-
-/* Hover */
+/* Hover Feature for Cards */
 .card:hover{
     opacity: 0.3;
 }
 
 .largecard:hover{
     opacity: 0.3;
+}
+
+/* Styles in Contact Me Section */
+.contactme{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;  
+    margin-top: 40px;  
+}
+
+.contactlink{
+    background-color: var(--light);
+    color: var(--dark)
 }
 
 /* Media Queries */
@@ -175,5 +189,9 @@ margin-bottom: 20px;
 
     .largecard {
      width: 100%;   
+    }
+
+    .header {
+        width:100%
     }
 }
