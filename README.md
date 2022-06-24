@@ -39,7 +39,6 @@ Follow Link to view my Module 2 - Challenge - Professional Portfolio:
 Special thanks to...
 <br>
 * [Sara Baqla](https://github.com/missatrox44)
-<br>
 * [Alex Sexton](https://github.com/SlexAxton)
 
 <br>
