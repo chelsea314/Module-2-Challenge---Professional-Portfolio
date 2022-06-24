@@ -1,24 +1,58 @@
 # Module-2-Challenge---Professional-Portfolio
 
 # Overview
-The purpose of this project is to create a professional portfolio that showcases my professional work, contact information, and is responsive to different screen sizes.
+The purpose of this project is to create a professional portfolio that showcases work samples, contact information, and is responsive to different screen sizes.
 
-As a class, our goal was to the image site pixel for pixel.
+As a class, our goal was to try to recreate the image below 'pixel for pixel' while incorporating our own information for future use in our job search. This portfolio will be updated throughout our course as we continue creating content.  
 
-# Deployed WebSite
-[Chelsea Sexton Professional Portfolio](hhttps://chelsea314.github.io/Module-2-Challenge---Professional-Portfolio/)
+<br>
 
-# View Site
-![Chelsea Sexton Professional Portfolio](./assets/images/)
+![Given Image](./assets/images/Lernantino%20__%20Web%20Developer%20(1).png)
+
+<br>
+
+# Wireframe
+I approached this project by first creating a wireframe to organize the content accordingly. 
+
+![Wireframe](./assets/images/Challenge%202%20-%20Professional%20Portfolio%20-%20Wireframe.jpg)
+![Wireframe](./assets/images/wireframe-bottom.jpg)
+
+<br>
+
+# Deployed Website
+Follow Link to view my Module 2 - Challenge - Professional Portfolio:
+
+[Chelsea Sexton Professional Portfolio](https://chelsea314.github.io/Module-2-Challenge---Professional-Portfolio/)
+
+<br>
+
+# View Site Screenshot
+
+![Chelsea Sexton Professional Portfolio](./assets/images/Module2-Professional-Portfolio-Screenshot.png)
+
+<br>
 
 # Collaborators
 [Chelsea Sexton](https://github.com/chelsea314)
 <br>
-Thanks to...
+
+Special thanks to...
 <br>
-[Sara Baqla](https://github.com/missatrox44)
+* [Sara Baqla](https://github.com/missatrox44)
 <br>
-[Alex Sexton](https://github.com/BrianLalli)
+* [Alex Sexton](https://github.com/SlexAxton)
+
+<br>
+
+# Resources
+* CSS-Tricks-Flex-Box: 
+    * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* Flexbox Images Responsive Grid Gallery Tutorial: 
+    * https://youtu.be/leoG0qRaFDI
+* MDN:
+    * https://developer.mozilla.org/en-US/
+
+<br>
 
 # License
 MIT License

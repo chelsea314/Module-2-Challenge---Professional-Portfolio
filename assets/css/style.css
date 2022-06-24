@@ -1,3 +1,4 @@
+/* General Styles */
 :root {
     --dark: #192841;
     --light: #e7e3e9;
@@ -17,7 +18,6 @@ header {
     background-color: var(--dark);
     width:100%;
     height: 80px;
-
 }
 
 h1 {
@@ -30,7 +30,6 @@ h1 {
     padding-right: 10px;
     min-width: fit-content;
 }
-
 
 nav{
     display: flex;
@@ -55,11 +54,6 @@ a {
     background-color: var(--dark);
     text-decoration:underline;
 }
-/* 
-h2 {
-    /* width: 250px;
-    height: 150px; */
-
 
 h3 {
     color: var(--dark);
@@ -75,8 +69,6 @@ h4{
     padding: 3px;
 }
 
-
-
 h6{
     color: var(--dark);
     background-color: var(--minty);
@@ -86,16 +78,11 @@ h6{
 }
 
 /* Classes */
-/* .Header-name {
-    min-width: 547px;
-} */
-
-
 .avatar {
-height: 100px;
-width: 115px;
-background-color: var(--dark);
-margin-bottom: 20px;
+    height: 100px;
+    width: 115px;
+    background-color: var(--dark);
+    margin-bottom: 20px;
 }
 
 /* Affects the subtitle section of the page */
@@ -110,36 +97,17 @@ margin-bottom: 20px;
     background-image: url(https://cdn11.bigcommerce.com/s-257gfls6/images/stencil/1280x1280/products/8496/13780/PAR-MDNTBLUE__92550.1510939894.jpg?c=2);
 }
 
-/* .subtitleSectonTry{
-    display: flex;
-} */
-
-/* .midnight{
-    display: flex;
-    width: 100%;
-    height: 160px;
-    position: relative;
-} */
-
-/* .subby{
-    display:flex;
-    position: absolute;
-    margin-top: 88px;
-    margin-left: 993px;
-} */
-
 /* Styles each section of main content */
 .section{
     margin: 35px;
 }
 
-/* Styles the left-hand side section headings */
+/* Styles the Section Titles */
 .Heading {
     display: flex;
     justify-content: flex-end;
     border-right: solid var(--dark);
     min-width: 250px;
-    
 }
 
 .Heading-header {
@@ -149,12 +117,8 @@ margin-bottom: 20px;
     width: 190px;
 }
 
-/* .height {
-    height: 660px;
-} */
-
 /* Styles the paragraph in 'About Me' section */
-.loremipsum{
+.aboutMeParagraph{
     padding-right: 20px;
     padding-left: 20px;
     font-size: 16px;
@@ -169,23 +133,6 @@ margin-bottom: 20px;
     justify-content: center;
 }
 
-/* article:first-child{
-    height: 300px;
-    width:100%;
-} */
-
-/* .largecard{
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-} */
-/* 
-.largecard {
-    max-width: 100%;
-    height: 300px;
-    width: 830px;
-    position: relative;
-} */
 .card{
     display: block;
     flex-basis: 100%;
@@ -197,48 +144,42 @@ margin-bottom: 20px;
     width: 400px;
     position: relative;
 }
+
 .card {
     flex-basis: 50%;
 }
+
 .card a{
     display: block;
     height: 135px;
     background-position-y: bottom;
     background-size: cover;
 }
+
 #surf-img {
     background-image: url(../images/surf.webp);
     border:solid 3px var(--minty);
 }
+
 #LEDWall-img {
     background-image: url(../images/LED\ Wall.jpeg);
     border:solid 3px var(--minty);
 }
+
 #Calculator-img{
     background-image: url(../images/Calculator.jpeg);
     border:solid 3px var(--minty);
 }
+
 #Puzzles-img{
     background-image: url(../images/pastel\ puzzles.jpeg);
     border:solid 3px var(--minty);
 }
+
 #runBuddy-img{
     background-image: url(../images/runbuddy.jpeg);
     border:solid 3px var(--minty);
 }
-/* 
-.borderminty{
-    border:solid var(--minty)
-} */
-
-/* .cardlabellarge{
-    background-color: var(--minty);
-    color: var(--dark);
-    position: absolute;
-    padding: 5px;
-    margin-top: 225px;
-    margin-right: 700px;
-} */
 
 .cardlabel{
     background-color: var(--minty);
@@ -247,15 +188,10 @@ margin-bottom: 20px;
     padding: 5px;
     margin-top: -75px;
 }
-/* Hover Feature for Cards */
+
 .card:hover{
     opacity: 0.3;
 }
-
-/* .no-decor{
-    text-decoration: none;
-    background-color: var(--light);
-} */
 
 /* Styles in Contact Me Section */
 .contactme{
@@ -278,71 +214,33 @@ margin-bottom: 20px;
         display: flex;
         align-items: stretch;
     }
+
     .avatar {
         display: none;
     }
+
     .header {
         display: block;
     } 
+
     h1{
         justify-content: center;
     } 
+
     nav{
         justify-content: center;
     }
-    /* .subtitle{
-        display:none;
-    } */
+   
     header{
         display: block;
     }
-    /* .Heading {
-        display: flex;
-        justify-content: flex-end;
-        border-right: none;
-        min-width: 250px;
-    }
-    .Heading-header {
-        text-align: center;
-        padding-right: 20px;
-        font-size: 40px;
-        width: 100%;
-        border-bottom: solid var(--dark);
-        padding-bottom: 10px;
-        margin-bottom: 15px;
-    } */
-    /* .avatar {
-        display: none;
-    } */
-   
-   
 }
 
-/* medium */
+/* Medium Screens */
 @media only screen and (min-width: 640px) {
-    /* .card {
-        flex-basis: 50%;
-    } */
-   
-/*   
-    .Heading {
+    header{
         display: flex;
-        justify-content: flex-end;
-        border-right: solid var(--dark);;
-        min-width: 250px;
-        
     }
-    .Heading-header {
-        text-align: right;
-        padding-right: 20px;
-        font-size: 40px;
-        width: 100%;
-        border-bottom: none;
-    } */
-
-   header{
-    display: flex;
-   }
 
     .avatar {
         display: flex;
@@ -350,28 +248,19 @@ margin-bottom: 20px;
         width: 115px;
         background-color: var(--dark);
         margin-bottom: 20px;
-        }
+    }
+
      h1{
         justify-content: flex-end;
     } 
-
-    /* nav ul {
-        display: flex;
-        width: fit-content;
-        } */ 
-    /* nav ul {
-        display: block;
-        width: 100vh;
-    } */
-
 }
 
-/* large */
+/* Large Screens */
 @media only screen and (min-width: 998px) {
-   
     .card:first-child{
         flex-basis: 100%;
     }
+
     .card:first-child a{
         height: 385px;
     }
@@ -385,21 +274,6 @@ margin-bottom: 20px;
     .section{
         display: flex;
     }
-    /* .Heading {
-        display: flex;
-        justify-content: flex-end;
-        border-right: none;
-        min-width: 250px;
-    } */
-    /* .Heading-header {
-        text-align: center;
-        padding-right: 20px;
-        font-size: 40px;
-        width: 100%;
-        border-bottom: solid var(--dark);
-        padding-bottom: 10px;
-        margin-bottom: 15px;
-    } */
 }
 
 /* xlarge */
@@ -408,8 +282,9 @@ margin-bottom: 20px;
         display: flex;
         align-items: stretch;
     }
+
     .card {
-        flex-basis: 25%;
+        flex-basis: 50%;
     }
 
     .header {
@@ -421,7 +296,6 @@ margin-bottom: 20px;
         justify-content: flex-end;
         border-right: solid var(--dark);;
         min-width: 250px;
-        
     }
 
     .Heading-header {
@@ -430,5 +304,5 @@ margin-bottom: 20px;
         font-size: 40px;
         width: 100%;
         border-bottom: none;
-        }
-    }
+     }
+}
