@@ -24,12 +24,13 @@ h1 {
     background-color: var(--minty);
     display:flex;
     align-items: center;
-    width: 350px;
     height: 50px;
     justify-content: flex-end;
     font-size: 40px;
     padding-right: 10px;
+    min-width: 350px;
 }
+
 
 nav{
     display: flex;
@@ -55,8 +56,8 @@ a {
 }
 
 h2 {
-    width: 250px;
-    height: 150px;
+    /* width: 250px;
+    height: 150px; */
 }
 
 h3 {
@@ -73,7 +74,21 @@ h4{
     padding: 3px;
 }
 
+
+
+h6{
+    color: var(--dark);
+    background-color: var(--minty);
+    font-size: 40px;
+    width: 400px;
+    padding: 7px;
+}
+
 /* Classes */
+.Header-name {
+    min-width: 547px;
+}
+
 
 .avatar {
 height: 100px;
@@ -94,31 +109,49 @@ margin-bottom: 20px;
     background-image: url(https://cdn11.bigcommerce.com/s-257gfls6/images/stencil/1280x1280/products/8496/13780/PAR-MDNTBLUE__92550.1510939894.jpg?c=2);
 }
 
+/* .subtitleSectonTry{
+    display: flex;
+} */
+
+/* .midnight{
+    display: flex;
+    width: 100%;
+    height: 160px;
+    position: relative;
+} */
+
+/* .subby{
+    display:flex;
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 993px;
+} */
+
 /* Styles each section of main content */
 .section{
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
     margin: 35px;
 }
 
 /* Styles the left-hand side section headings */
-.headings{
+.Heading {
     display: flex;
-    align-items: flex-start;
     justify-content: flex-end;
+    border-right: solid var(--dark);
+    min-width: 250px;
+    
+}
+
+.Heading-header {
+    text-align: right;
     padding-right: 20px;
     font-size: 40px;
+    width: 190px;
 }
 
-.height {
+/* .height {
     height: 660px;
-    border-right: solid var(--dark);
-}
+} */
 
-.borderright{
-    border-right: solid var(--dark);
-}
 /* Styles the paragraph in 'About Me' section */
 .loremipsum{
     padding-right: 20px;
@@ -188,13 +221,18 @@ margin-bottom: 20px;
     opacity: 0.3;
 }
 
+.no-decor{
+    text-decoration: none;
+    background-color: var(--light);
+}
+
 /* Styles in Contact Me Section */
 .contactme{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;  
-    margin-top: 40px;  
 }
 
 .contactlink{
@@ -203,17 +241,126 @@ margin-bottom: 20px;
 }
 
 /* Media Queries */
+/* small */
+@media only screen and (max-width:390px) {
+    /* .Heading {
+        display: flex;
+        justify-content: flex-end;
+        border-right: none;
+        min-width: 250px;
+    }
+    .Heading-header {
+        text-align: center;
+        padding-right: 20px;
+        font-size: 40px;
+        width: 100%;
+        border-bottom: solid var(--dark);
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    } */
+    /* .avatar {
+        display: none;
+    } */
+   
+   
+}
+
+/* medium */
 @media only screen and (min-width: 640px) {
     .card {
         flex-basis: 50%;
     }
+    .section{
+        display: flex;
+        align-items: stretch;
+    }
+/*   
+    .Heading {
+        display: flex;
+        justify-content: flex-end;
+        border-right: solid var(--dark);;
+        min-width: 250px;
+        
+    }
+    .Heading-header {
+        text-align: right;
+        padding-right: 20px;
+        font-size: 40px;
+        width: 100%;
+        border-bottom: none;
+    } */
+
+    /* header{
+        display: flex;
+    }
+
+    .avatar {
+        display: flex;
+        height: 100px;
+        width: 115px;
+        background-color: var(--dark);
+        margin-bottom: 20px;
+        }
+
+    nav ul {
+        display: flex;
+        width: fit-content;
+        } */
+    /* nav ul {
+        display: block;
+        width: 100vh;
+    } */
+
 }
-   
-@media only screen and (min-width: 960px) {
+
+/* large */
+@media only screen and (max-width: 998px) {
     .card {
         flex-basis: 33.333%;
     }
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--dark);
+    }
+
+    /* nav ul {
+        display: block;
+    } */
+    .avatar {
+        display: none;
+    }
+    header {
+        display: block;
+    }
+    h1{
+        justify-content: center;
+    }
+    .subtitle{
+        display:none;
+    }
+    .section{
+        display: block;
+    }
+    .Heading {
+        display: flex;
+        justify-content: flex-end;
+        border-right: none;
+        min-width: 250px;
+    }
+    .Heading-header {
+        text-align: center;
+        padding-right: 20px;
+        font-size: 40px;
+        width: 100%;
+        border-bottom: solid var(--dark);
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
 }
+
+/* xlarge */
 @media only screen and (min-width: 1280px) {
     .card {
         flex-basis: 25%;
@@ -226,4 +373,22 @@ margin-bottom: 20px;
     .header {
         width:100%
     }
+    .Heading {
+        display: flex;
+        justify-content: flex-end;
+        border-right: solid var(--dark);;
+        min-width: 250px;
+        
+    }
+    .Heading-header {
+        text-align: right;
+        padding-right: 20px;
+        font-size: 40px;
+        width: 100%;
+        border-bottom: none;
+    /* header{
+        display: flex;
+    } */
 }
+
+
