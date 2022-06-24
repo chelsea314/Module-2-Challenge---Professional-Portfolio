@@ -28,7 +28,7 @@ h1 {
     justify-content: flex-end;
     font-size: 40px;
     padding-right: 10px;
-    min-width: 350px;
+    min-width: fit-content;
 }
 
 
@@ -47,6 +47,7 @@ nav ul li{
     color: var(--minty);
     font-size: 25px;
     padding: 20px;
+    min-width: fit-content;
 }
 
 a {
@@ -85,9 +86,9 @@ h6{
 }
 
 /* Classes */
-.Header-name {
+/* .Header-name {
     min-width: 547px;
-}
+} */
 
 
 .avatar {
@@ -205,21 +206,39 @@ margin-bottom: 20px;
     background-position-y: bottom;
     background-size: cover;
 }
-#surfimg {
+#surf-img {
     background-image: url(../images/surf.webp);
+    border:solid 3px var(--minty);
 }
+#LEDWall-img {
+    background-image: url(../images/LED\ Wall.jpeg);
+    border:solid 3px var(--minty);
+}
+#Calculator-img{
+    background-image: url(../images/Calculator.jpeg);
+    border:solid 3px var(--minty);
+}
+#Puzzles-img{
+    background-image: url(../images/pastel\ puzzles.jpeg);
+    border:solid 3px var(--minty);
+}
+#runBuddy-img{
+    background-image: url(../images/runbuddy.jpeg);
+    border:solid 3px var(--minty);
+}
+/* 
 .borderminty{
     border:solid var(--minty)
-}
+} */
 
-.cardlabellarge{
+/* .cardlabellarge{
     background-color: var(--minty);
     color: var(--dark);
     position: absolute;
     padding: 5px;
     margin-top: 225px;
     margin-right: 700px;
-}
+} */
 
 .cardlabel{
     background-color: var(--minty);
@@ -233,14 +252,10 @@ margin-bottom: 20px;
     opacity: 0.3;
 }
 
-.largecard:hover{
-    opacity: 0.3;
-}
-
-.no-decor{
+/* .no-decor{
     text-decoration: none;
     background-color: var(--light);
-}
+} */
 
 /* Styles in Contact Me Section */
 .contactme{
@@ -257,8 +272,30 @@ margin-bottom: 20px;
 }
 
 /* Media Queries */
-/* small */
-@media only screen and (max-width:390px) {
+/* Small Screen */
+@media only screen and (min-width:0px) {
+    .section{
+        display: flex;
+        align-items: stretch;
+    }
+    .avatar {
+        display: none;
+    }
+    .header {
+        display: block;
+    } 
+    h1{
+        justify-content: center;
+    } 
+    nav{
+        justify-content: center;
+    }
+    /* .subtitle{
+        display:none;
+    } */
+    header{
+        display: block;
+    }
     /* .Heading {
         display: flex;
         justify-content: flex-end;
@@ -286,10 +323,7 @@ margin-bottom: 20px;
     /* .card {
         flex-basis: 50%;
     } */
-    .section{
-        display: flex;
-        align-items: stretch;
-    }
+   
 /*   
     .Heading {
         display: flex;
@@ -306,9 +340,9 @@ margin-bottom: 20px;
         border-bottom: none;
     } */
 
-    /* header{
-        display: flex;
-    }
+   header{
+    display: flex;
+   }
 
     .avatar {
         display: flex;
@@ -317,11 +351,14 @@ margin-bottom: 20px;
         background-color: var(--dark);
         margin-bottom: 20px;
         }
+     h1{
+        justify-content: flex-end;
+    } 
 
-    nav ul {
+    /* nav ul {
         display: flex;
         width: fit-content;
-        } */
+        } */ 
     /* nav ul {
         display: block;
         width: 100vh;
@@ -339,38 +376,22 @@ margin-bottom: 20px;
         height: 385px;
     }
     
-   
     nav{
         display: flex;
         justify-content: space-evenly;
         background-color: var(--dark);
     }
-
-    /* nav ul {
-        display: block;
-    } */
-    .avatar {
-        display: none;
-    }
-    header {
-        display: block;
-    }
-    h1{
-        justify-content: center;
-    }
-    .subtitle{
-        display:none;
-    }
+  
     .section{
-        display: block;
+        display: flex;
     }
-    .Heading {
+    /* .Heading {
         display: flex;
         justify-content: flex-end;
         border-right: none;
         min-width: 250px;
-    }
-    .Heading-header {
+    } */
+    /* .Heading-header {
         text-align: center;
         padding-right: 20px;
         font-size: 40px;
@@ -378,22 +399,23 @@ margin-bottom: 20px;
         border-bottom: solid var(--dark);
         padding-bottom: 10px;
         margin-bottom: 15px;
-    }
+    } */
 }
 
 /* xlarge */
 @media only screen and (min-width: 1280px) {
+    .section{
+        display: flex;
+        align-items: stretch;
+    }
     .card {
         flex-basis: 25%;
-    }
-
-    .largecard {
-     width: 100%;   
     }
 
     .header {
         width:100%
     }
+
     .Heading {
         display: flex;
         justify-content: flex-end;
@@ -401,6 +423,7 @@ margin-bottom: 20px;
         min-width: 250px;
         
     }
+
     .Heading-header {
         text-align: right;
         padding-right: 20px;
